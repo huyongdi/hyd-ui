@@ -18,7 +18,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import style from './index.less';
+import './index.less';
 
 var button =
 /*#__PURE__*/
@@ -34,9 +34,8 @@ function (_Component) {
   _createClass(button, [{
     key: "render",
     value: function render() {
-      console.log(style);
       return React.createElement("button", {
-        className: style.btn
+        className: "btn"
       }, this.props.text);
     }
   }]);

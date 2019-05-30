@@ -1,20 +1,3 @@
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = _interopRequireWildcard(require("react"));
-
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
-require("./index.less");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj["default"] = obj; return newObj; } }
-
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -33,6 +16,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import './index.less';
+
 var button =
 /*#__PURE__*/
 function (_Component) {
@@ -47,16 +34,16 @@ function (_Component) {
   _createClass(button, [{
     key: "render",
     value: function render() {
-      return _react["default"].createElement("button", {
-        className: "btn"
+      return React.createElement("button", {
+        className: "btn1"
       }, this.props.text);
     }
   }]);
 
   return button;
-}(_react.Component);
+}(Component);
 
-exports["default"] = button;
+export { button as default };
 button.propTypes = {
-  text: _propTypes["default"].any
+  text: PropTypes.any
 };

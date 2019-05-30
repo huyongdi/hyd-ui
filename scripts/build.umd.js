@@ -66,8 +66,7 @@ const config = {
       {
         test: /\.(le|c)ss$/,
         use: [
-          // MiniCssExtractPlugin.loader,
-          "style-loader",
+          MiniCssExtractPlugin.loader,
           "css-loader",
           { loader: "postcss-loader", options: { sourceMap: false } },
           {
