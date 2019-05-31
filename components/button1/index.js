@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './index.less';
+import './style/index.less';
 
-export default class button extends Component  {
+export default class Button1 extends Component  {
     render() { 
         return <button className="btn1">{this.props.text}</button>
     }
 }
-button.propTypes = {
+Button1.propTypes = {
     text: PropTypes.any
 }

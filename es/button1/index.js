@@ -18,20 +18,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './index.less';
+import './style/index.less';
 
-var button =
+var Button1 =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(button, _Component);
+  _inherits(Button1, _Component);
 
-  function button() {
-    _classCallCheck(this, button);
+  function Button1() {
+    _classCallCheck(this, Button1);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(button).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Button1).apply(this, arguments));
   }
 
-  _createClass(button, [{
+  _createClass(Button1, [{
     key: "render",
     value: function render() {
       return React.createElement("button", {
@@ -40,10 +40,10 @@ function (_Component) {
     }
   }]);
 
-  return button;
+  return Button1;
 }(Component);
 
-export { button as default };
-button.propTypes = {
+export { Button1 as default };
+Button1.propTypes = {
   text: PropTypes.any
 };
