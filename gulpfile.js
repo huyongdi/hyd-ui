@@ -12,7 +12,7 @@ const cssnano = require("gulp-cssnano"); //压缩
 const size = require("gulp-filesize"); //显示文件大小
 // const sourcemaps = require("gulp-sourcemaps");
 // const rename = require("gulp-rename");
-const { name } = require("../package.json");
+const { name } = require("./package.json");
 const browserList = [
   "last 2 versions",
   "Android >= 4.0",
@@ -21,13 +21,13 @@ const browserList = [
 ];
 
 const DIR = {  //生成绝对路径
-  less: path.resolve(__dirname, "../components/**/*.less"),
+  less: path.resolve(__dirname, "components/**/*.less"),
   buildSrc: [
-    path.resolve(__dirname, "../components/**/index.less")
+    path.resolve(__dirname, "components/**/index.less")
   ],
-  lib: path.resolve(__dirname, "../lib"),
-  es: path.resolve(__dirname, "../es"),
-  dist: path.resolve(__dirname, "../dist")
+  lib: path.resolve(__dirname, "lib"),
+  es: path.resolve(__dirname, "es"),
+  dist: path.resolve(__dirname, "dist")
 };
 
 gulp.task("copyLess", () => {

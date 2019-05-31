@@ -1,7 +1,7 @@
 /**
  * @name UMD 模块 打包
  * @description 输出目录 [dist]
- * @description 文件名 [cuke-ui]
+ * @description 文件名 [hyd-ui]
  * CMD Node.js 环境
  * AMD 浏览器环境
  * UMD 两种环境都可以执行
@@ -16,7 +16,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin'); //webpack4新�
 const ProgressBarPlugin = require('progress-bar-webpack-plugin'); //编译进度条插件
 // eslint-disable-next-line
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer")  //打包体积展示
-const { name } = require("../package.json");
+const { name } = require("./package.json");
 
 const config = {
   mode: "production",
