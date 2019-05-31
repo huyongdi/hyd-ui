@@ -14,7 +14,7 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");  //压缩
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin"); //压缩单独的CSS
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); //webpack4新出，单独打包CSS
 const ProgressBarPlugin = require('progress-bar-webpack-plugin'); //编译进度条插件
-// eslint-disable-next-line
+
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer")  //打包体积展示
 const { name } = require("./package.json");
 
@@ -118,23 +118,8 @@ const config = {
     new MiniCssExtractPlugin({
       filename: "[name].min.css"
     }),
-    // 在打包的文件之前 加上版权说明
-//     new webpack.BannerPlugin(` \n ${name} v${version} \n ${description}
-//     \n ${LOGO}\n ${fs.readFileSync(path.join(process.cwd(), "LICENSE"))}
-//   `),
 
-    // 这个插件允许你创建全局常量用于编译时解析。如果设置mode："production",webpack默认会设置"process.env.NODE_ENV": JSON.stringify("production")。
-    // new webpack.DefinePlugin({
-    //   "process.env.NODE_ENV": JSON.stringify("production"),
-    //   __DEBUG__: false,
-    // }),
-
-    // 是否要切换到优化模式 在某个 loader 升级为依靠直接传递给它的配置选项运行之前
-    // new webpack.LoaderOptionsPlugin({
-    //   minimize: true
-    // }),
-
-    //moment 2.18 会将所有本地化内容和核心功能一起打包（见该 GitHub issue）。你可使用 IgnorePlugin 在打包时忽略本地化内容:
+    //moment 2.18 会将所有本地化内容和核心功能一起打包。你可使用 IgnorePlugin 在打包时忽略本地化内容:
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
     // new BundleAnalyzerPlugin(),
   ]

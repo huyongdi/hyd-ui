@@ -10,12 +10,9 @@ const less = require("gulp-less");
 const autoprefixer = require("gulp-autoprefixer");
 const cssnano = require("gulp-cssnano"); //压缩
 const size = require("gulp-filesize"); //显示文件大小
-// const sourcemaps = require("gulp-sourcemaps");
-// const rename = require("gulp-rename");
 const { name } = require("./package.json");
 const browserList = [
   "last 2 versions",
-  "Android >= 4.0",
   "Firefox ESR",
   "not ie < 9"
 ];
@@ -40,7 +37,6 @@ gulp.task("copyLess", () => {
 gulp.task("copyCss", () => {
   return gulp
     .src(DIR.buildSrc)
-    // .pipe(sourcemaps.init())
     //编译.less文件为.css文件 
     .pipe(
       less({
@@ -57,7 +53,6 @@ gulp.task("copyCss", () => {
 gulp.task("dist", () => {
   return gulp
     .src(DIR.buildSrc)
-    // .pipe(sourcemaps.init())
     .pipe(
       less({
         outputStyle: "compressed"
@@ -69,17 +64,6 @@ gulp.task("dist", () => {
     .pipe(concat(`${name}.min.css`))
     .pipe(size())
     .pipe(gulp.dest(DIR.dist))
-  // .pipe(sourcemaps.write())
-  // .pipe(rename(`${name}.css.map`))
-  // .pipe(size())
-  // .pipe(gulp.dest(DIR.dist))
-
-
-  // .pipe(gulp.dest(DIR.dist))
-  // .pipe(sourcemaps.write())
-  // .pipe(rename(`${name}.min.css.map`))
-  // .pipe(size())
-  // .pipe(gulp.dest(DIR.dist));
 });
 
 gulp.task('default', gulp.series('copyLess', 'copyCss', 'dist', function (done) {
