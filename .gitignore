@@ -1,2 +1,9 @@
 node_modules
 
+/dist
+/es
+/lib
+/storybook-static
+
+yarn-error.log
+yarn.lock
