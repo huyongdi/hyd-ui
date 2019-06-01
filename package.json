@@ -1,6 +1,6 @@
 {
   "name": "hyd-ui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": "https://github.com/huyongdi/hyd-ui.git",
   "author": {
     "name": "HYD",
@@ -29,6 +29,12 @@
     "lib",
     "es",
     "dist"
+  ],
+  "sideEffects": [
+    "dist/*",
+    "es/**/style/*",
+    "lib/**/style/*",
+    "*.less"
   ],
   "scripts": {
     "storybook": "start-storybook -p 6006",
