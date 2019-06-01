@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h1 align="center"></h1>hyd-ui</h1>
+<h1 align="center">hyd-ui</h1>
 
 <h4 align="center">react按需加载组件库脚手架</h4>
 
