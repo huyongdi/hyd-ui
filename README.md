@@ -37,7 +37,7 @@ class Test extends React.Component {
 }
 ```
 
-> 2 .按需引入
+> 2. 按需引入
 
 ```js
 import Button from 'hyd-ui/lib/button';
@@ -47,7 +47,7 @@ import 'hyd-ui/lib/button/style';
 > 3. 仿照antd使用 [babel-plugin-import](https://github.com/ant-design/babel-plugin-import)
 
 ```js
-// .babelrc.js 或加入webpack.config.js的babel-loader中
+// .babelrc.js 或加入到webpack.config.js的babel-loader中
 module.exports = {
   plugins: [
     ["import", {
@@ -76,7 +76,7 @@ module.exports = {
 
 ## 3: 参考文档
 
-- [ant-design]: https://github.com/ant-design/ant-design
+- [ant-design] <https://github.com/ant-design/ant-design>
 - [gulp]: https://www.gulpjs.com.cn/docs/
 - [webpack]: https://www.webpackjs.com/
 ```
