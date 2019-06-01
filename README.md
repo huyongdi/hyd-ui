@@ -55,11 +55,21 @@ module.exports = {
   ]
 }
 ```
-## 4: 使用文档 🌍
+## 3: 使用文档 🌍
 ```js
 doc目录下运行index.html (通过storybook生成，待完善)
+目前有2个测试按钮(字体颜色不同)：
+class Test extends React.Component {
+  render(){
+    return (
+      <Button text="毛衣"></Button>
+      <Button1 text="花欠"></Button1>
+    )
+ }
+}
 ```
-## 5: 参考文档 🔗
+
+## 4: 参考文档 🔗
 - [ant-design](https://github.com/ant-design/ant-design)
 - [gulp](https://www.gulpjs.com.cn/docs/)
 - [webpack](https://www.webpackjs.com/)
