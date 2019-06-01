@@ -55,10 +55,13 @@ module.exports = {
   ]
 }
 ```
-
-
-## 3: 参考文档 🌍
+## 4: 使用文档 🌍
+```js
+doc目录下运行index.html (通过storybook生成，待完善)
+```
+## 5: 参考文档 🔗
 - [ant-design](https://github.com/ant-design/ant-design)
 - [gulp](https://www.gulpjs.com.cn/docs/)
 - [webpack](https://www.webpackjs.com/)
+- [storybook](https://github.com/storybookjs/storybook)
 ```

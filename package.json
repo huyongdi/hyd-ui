@@ -32,7 +32,7 @@
   ],
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build:storybook": "build-storybook",
+    "build:storybook": "build-storybook -o doc",
     "build": "yarn run clean && yarn build:lib && yarn build:es&& yarn build:umd && yarn build:css",
     "clean": "rimraf dist lib es",
     "build:lib": "cross-env OUTPUT_MODULE=commonjs babel components -d lib",

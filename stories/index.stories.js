@@ -8,6 +8,6 @@ import { storiesOf } from '@storybook/react';
 import Button from "../components/button";
 import Button1 from "../components/button1";
 
-storiesOf('Button', module).add('演示按钮', () => <Button text={1234}></Button> );
+storiesOf('Button', module).add('演示按钮', () => <><Button text={1234}></Button></> );
 storiesOf('Button1', module).add('演示按钮', () => <Button1 text={1234}></Button1> );
 
