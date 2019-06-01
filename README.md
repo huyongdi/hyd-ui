@@ -19,32 +19,13 @@ npm i hyd-ui --save
 yarn add hyd-ui
 ```
 
-## 2: 使用 🔨 
-
-
-> 1. 整体引入
-
-```jsx
-import { Button } from "hyd-ui"
-import "hyd-ui/dist/hyd-ui.min.css"
-
-class Test extends React.Component {
-  render(){
-    return (
-      <Button text="毛衣"></Button>
-    )
- }
-}
-```
-
-> 2. 按需引入
-
+## 2: 使用(按需导入) 🔨 
+> 1. 手动引入
 ```js
-import Button from 'hyd-ui/lib/button';
-import 'hyd-ui/lib/button/style';
+import Button from 'hyd-ui/lib/button'; // 加载 JS
+import 'hyd-ui/lib/button/style/css'; // 加载 CSS
 ```
-
-> 3. 仿照antd使用 [babel-plugin-import](https://github.com/ant-design/babel-plugin-import)
+> 2. 利用插件 [babel-plugin-import](https://github.com/ant-design/babel-plugin-import)
 
 ```js
 // .babelrc.js 或加入到webpack.config.js的babel-loader中
@@ -75,9 +56,9 @@ module.exports = {
 }
 ```
 
-## 3: 参考文档 🌍
 
-- [ant-design] <https://github.com/ant-design/ant-design>
-- [gulp] <https://www.gulpjs.com.cn/docs/>
-- [webpack]  <https://www.webpackjs.com/>
+## 3: 参考文档 🌍
+- [ant-design](https://github.com/ant-design/ant-design)
+- [gulp](https://www.gulpjs.com.cn/docs/)
+- [webpack](https://www.webpackjs.com/)
 ```
