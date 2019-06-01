@@ -1,8 +1,27 @@
 {
   "name": "hyd-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": "https://github.com/huyongdi/hyd-ui.git",
-  "author": "HYD <354224080@qq.com>",
+  "author": {
+    "name": "HYD",
+    "email": "354224080@qq.com",
+    "url": "http://www.huyongdi.com"
+  },
+  "description": "react+webpack+gulp+less+storybook 从零搭建实现了组件库的按需加载",
+  "keywords": [
+    "hyd-ui",
+    "react",
+    "gulp",
+    "webpack",
+    "less",
+    "storybook",
+    "react组件库"
+  ],
+  "homepage": "http://www.huyongdi.com",
+  "bugs": {
+    "url": "https://github.com/huyongdi/hyd-ui",
+    "email": "354224080@qq.com"
+  },
   "license": "MIT",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -21,7 +40,9 @@
     "build:css": "gulp",
     "build:es": "babel components -d es"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@storybook/addon-options": "^5.0.11"
+  },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
