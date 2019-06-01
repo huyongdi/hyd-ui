@@ -73,10 +73,11 @@ module.exports = {
     },'hyd-ui'], 
   ]
 }
+```
 
-## 3: 参考文档
+## 3: 参考文档 🌍
 
 - [ant-design] <https://github.com/ant-design/ant-design>
-- [gulp]: https://www.gulpjs.com.cn/docs/
-- [webpack]: https://www.webpackjs.com/
+- [gulp] <https://www.gulpjs.com.cn/docs/>
+- [webpack]  <https://www.webpackjs.com/>
 ```
