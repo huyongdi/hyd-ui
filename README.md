@@ -31,7 +31,7 @@ import "hyd-ui/dist/hyd-ui.min.css"
 class Test extends React.Component {
   render(){
     return (
-      <Button text="天彦"></Button>
+      <Button text="毛衣"></Button>
     )
  }
 }
