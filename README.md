@@ -28,6 +28,8 @@ import 'hyd-ui/lib/button/style/css'; // 加载 CSS
 > 2. 利用插件 [babel-plugin-import](https://github.com/ant-design/babel-plugin-import)
 
 ```js
+import { Button , Button1 } from "hyd-ui"
+
 // .babelrc.js 或加入到webpack.config.js的babel-loader中
 module.exports = {
   plugins: [
